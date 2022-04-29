@@ -4,10 +4,21 @@ import (
 	"crypto/hmac"
 	"crypto/sha256"
 	"encoding/hex"
+	"fmt"
 	"strconv"
 	"strings"
 	"unicode/utf8"
 )
+
+const Version = "1.0.1"
+
+// ToString 转换成string
+func ToString(value interface{}) string {
+	if value == nil {
+		return ""
+	}
+	return fmt.Sprint(value)
+}
 
 // ToFloat64 string到float64
 func ToFloat64(s string) float64 {
