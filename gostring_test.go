@@ -12,12 +12,6 @@ func TestName(t *testing.T) {
 	fmt.Printf("%d\n", strings.LastIndex(str, "("))
 	fmt.Printf("%d\n", strings.LastIndex("iPad (6th generation, WiFi)<iPad7,5>", "<"))
 	fmt.Printf("%d\n", strings.LastIndex("iPad (6th generation, WiFi)<iPad7,5>", "("))
-	s := str[0:17]
-	fmt.Printf("%s\n", s)
-	str = "iPad (6th generation, WiFi)<iPad7,5>"
-	s = str[0:5]
-	fmt.Printf("%s\n", s)
-	fmt.Printf(strings.TrimSpace(s))
 }
 
 func TestToInt64(t *testing.T) {
