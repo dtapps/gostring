@@ -5,21 +5,21 @@
 📦 Golang 字符串组件
 
 [comment]: <> (go)
-[![godoc](https://pkg.go.dev/badge/github.com/dtapps/gostring?status.svg)](https://pkg.go.dev/github.com/dtapps/gostring)
-[![goproxy.cn](https://goproxy.cn/stats/github.com/dtapps/gostring/badges/download-count.svg)](https://goproxy.cn/stats/github.com/dtapps/gostring)
-[![goreportcard.com](https://goreportcard.com/badge/github.com/dtapps/gostring)](https://goreportcard.com/report/github.com/dtapps/gostring)
-[![deps.dev](https://img.shields.io/badge/deps-go-red.svg)](https://deps.dev/go/github.com%2Fdtapps%2Fgostring)
+[![godoc](https://pkg.go.dev/badge/go.dtapp.net/string?status.svg)](https://pkg.go.dev/go.dtapp.net/string)
+[![goproxy.cn](https://goproxy.cn/stats/go.dtapp.net/string/badges/download-count.svg)](https://goproxy.cn/stats/go.dtapp.net/string)
+[![goreportcard.com](https://goreportcard.com/badge/go.dtapp.net/string)](https://goreportcard.com/report/go.dtapp.net/string)
+[![deps.dev](https://img.shields.io/badge/deps-go-red.svg)](https://deps.dev/go/go.dtapp.net/string)
 
 #### 安装使用
 
 ```go
-go get -v -u github.com/dtapps/gostring
+go get -v -u go.dtapp.net/string
 ```
 
 #### 导入
 
 ```go
 import (
-    "github.com/dtapps/gostring"
+    "go.dtapp.net/string"
 )
 ```
