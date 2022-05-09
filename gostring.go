@@ -10,7 +10,7 @@ import (
 	"unicode/utf8"
 )
 
-const Version = "1.0.2"
+const Version = "1.0.3"
 
 // ToString 转换成string
 func ToString(value interface{}) string {
