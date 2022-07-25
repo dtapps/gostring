@@ -2,7 +2,7 @@
 <a href="https://www.dtapp.net/">Golang String</a>
 </h1>
 
-📦 Golang 字符串
+📦 Golang 字符串处理
 
 [comment]: <> (go)
 [![godoc](https://pkg.go.dev/badge/github.com/dtapps/gostring?status.svg)](https://pkg.go.dev/github.com/dtapps/gostring)
