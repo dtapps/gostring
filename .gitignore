@@ -4,4 +4,4 @@
 .idea
 .vscode
 *.log
-gitmod.sh
+gomod.sh

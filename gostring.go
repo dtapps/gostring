@@ -10,8 +10,6 @@ import (
 	"unicode/utf8"
 )
 
-const Version = "1.0.3"
-
 // ToString 转换成string
 func ToString(value interface{}) string {
 	if value == nil {
@@ -96,12 +94,15 @@ func TrimLastChar(s string) string {
 
 // Split 字符串分隔
 func Split(s string, sep string) []string {
+	if len(s) <= 0 {
+		return []string{}
+	}
 	return strings.Split(s, sep)
 }
 
 // Contains 判断字符串是否包含某个字符
-func Contains(s, substr string) bool {
-	return strings.Contains(s, substr)
+func Contains(s, sep string) bool {
+	return strings.Contains(s, sep)
 }
 
 func NumericalToString(value interface{}) (string, bool) {
