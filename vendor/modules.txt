@@ -1,6 +1,0 @@
-# go.dtapp.net/gorandom v1.0.1
-## explicit; go 1.18
-go.dtapp.net/gorandom
-# go.dtapp.net/gotime v1.0.4
-## explicit; go 1.18
-go.dtapp.net/gotime

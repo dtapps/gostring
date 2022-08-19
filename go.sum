@@ -1,4 +1,4 @@
 go.dtapp.net/gorandom v1.0.1 h1:IWfMClh1ECPvyUjlqD7MwLq4mZdUusD1qAwAdsvEJBs=
 go.dtapp.net/gorandom v1.0.1/go.mod h1:ZPdgalKpvFV/ATQqR0k4ns/F/IpITAZpx6WkWirr5Y8=
-go.dtapp.net/gotime v1.0.4 h1:gOOkGKfhJwX+dsGHvnF2est09Oqvk7cihJkePddJ5a8=
-go.dtapp.net/gotime v1.0.4/go.mod h1:Gq7eNLr2iMLP18UNWONRq4V3Uhf/ADp4bIrS+Tc6ktY=
+go.dtapp.net/gotime v1.0.5 h1:12aNgB2ULpP6QgQHEUkLilZ4ASvhpFxMFQkBwn0par8=
+go.dtapp.net/gotime v1.0.5/go.mod h1:Gq7eNLr2iMLP18UNWONRq4V3Uhf/ADp4bIrS+Tc6ktY=
