@@ -7,8 +7,15 @@ import (
 
 // GenerateRandom 生成count个长度length不重复的随机数
 func GenerateRandom(length, count int) []int {
+	return GenerateRandomFunc(length, count, func(num int) bool {
+		return false
+	})
+}
 
-	fI := 0
+// GenerateRandomFunc 生成count个长度length不重复的随机数，支持外部查询
+func GenerateRandomFunc(length, count int, dFun func(num int) bool) []int {
+
+	var fI int = 0
 	startStr := "1"
 	endStr := "9"
 
@@ -22,11 +29,11 @@ func GenerateRandom(length, count int) []int {
 		fI = fI + 1
 	}
 
-	return GenerateRandomNumber(ToInt(startStr), ToInt(endStr), count)
+	return GenerateRandomNumber(ToInt(startStr), ToInt(endStr), count, dFun)
 }
 
 // GenerateRandomNumber 生成count个[start,end)结束的不重复的随机数
-func GenerateRandomNumber(start, end, count int) []int {
+func GenerateRandomNumber(start, end, count int, dFun func(num int) bool) []int {
 
 	// 范围检查
 	if end < start || (end-start) < count {
@@ -53,7 +60,10 @@ func GenerateRandomNumber(start, end, count int) []int {
 		}
 
 		if !exist {
-			nums = append(nums, num)
+			isExist := dFun(num)
+			if isExist == false {
+				nums = append(nums, num)
+			}
 		}
 	}
 
