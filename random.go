@@ -5,8 +5,28 @@ import (
 	"time"
 )
 
+// GenerateRandom 生成count个长度length不重复的随机数
+func GenerateRandom(length, count int) []int {
+
+	fI := 0
+	startStr := "1"
+	endStr := "9"
+
+	for {
+		if fI+2 > length {
+			break
+		}
+		startStr += "0"
+		endStr += "9"
+
+		fI = fI + 1
+	}
+
+	return GenerateRandomNumber(ToInt(startStr), ToInt(endStr), count)
+}
+
 // GenerateRandomNumber 生成count个[start,end)结束的不重复的随机数
-func GenerateRandomNumber(start int, end int, count int) []int {
+func GenerateRandomNumber(start, end, count int) []int {
 
 	// 范围检查
 	if end < start || (end-start) < count {
