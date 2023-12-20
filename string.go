@@ -5,9 +5,11 @@ import (
 	"crypto/sha256"
 	"encoding/hex"
 	"fmt"
+	"go.dtapp.net/gojson"
 	"strconv"
 	"strings"
 	"unicode/utf8"
+	"unsafe"
 )
 
 // ToString 转换成string
@@ -149,4 +151,39 @@ func NumericalToString(value interface{}) (string, bool) {
 		val = strconv.FormatFloat(floatVal, 'f', -1, 64)
 	}
 	return val, true
+}
+
+func StringToBytes(s string) []byte {
+	return unsafe.Slice(unsafe.StringData(s), len(s))
+}
+
+func BytesToString(b []byte) string {
+	return unsafe.String(&b[0], len(b))
+}
+
+// ToUpper 转大写
+func ToUpper(s string) string {
+	return strings.ToUpper(s)
+}
+
+// ToLower 转小写
+func ToLower(s string) string {
+	return strings.ToLower(s)
+}
+
+func GetString(i interface{}) string {
+	switch v := i.(type) {
+	case string:
+		return v
+	case []byte:
+		return string(v)
+	case int:
+		return strconv.Itoa(v)
+	case bool:
+		return strconv.FormatBool(v)
+	default:
+
+		bytes, _ := gojson.Marshal(v)
+		return string(bytes)
+	}
 }
