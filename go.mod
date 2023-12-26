@@ -1,6 +1,6 @@
 module go.dtapp.net/gostring
 
-go 1.21
+go 1.21.5
 
 require (
 	go.dtapp.net/gojson v1.0.2

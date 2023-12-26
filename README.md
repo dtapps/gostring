@@ -1,8 +1,8 @@
 <h1>
-<a href="https://www.dtapp.net/">Golang String</a>
+<a href="https://www.dtapp.net/">Golang</a>
 </h1>
 
-📦 Golang String
+📦 Golang 字符串
 
 [comment]: <> (go)
 [![godoc](https://pkg.go.dev/badge/go.dtapp.net/gostring?status.svg)](https://pkg.go.dev/go.dtapp.net/gostring)
@@ -12,6 +12,6 @@
 
 #### 安装
 
-```go
-go get -v -u go.dtapp.net/gostring
+```shell
+go get -v -u go.dtapp.net/gostring@v1.0.13
 ```
