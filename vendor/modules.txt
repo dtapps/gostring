@@ -84,7 +84,7 @@ go.dtapp.net/gojson/json
 # go.dtapp.net/gorandom v1.0.3
 ## explicit; go 1.22
 go.dtapp.net/gorandom
-# go.dtapp.net/gotime v1.0.10
+# go.dtapp.net/gotime v1.0.11
 ## explicit; go 1.22
 go.dtapp.net/gotime
 # golang.org/x/arch v0.8.0
